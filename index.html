@@ -36,7 +36,7 @@
 
   <div class = "container">
   <div class = "row">
-  <div class = "col-md-9">
+  <div class = "col-md-7">
   <div class = "row">
     <div class = "col-md-2">
     <button type="button" class="btn btn-primary"> Last Week</button> </div>
@@ -47,10 +47,10 @@
     <button type="button" class="btn btn-primary"> Last Year</button> </div>
   </div>
   <div class = "row">
-  <div class = "col-md-3">
+  <div class = "col-md-8">
     <h1>This run: 6.67%</h1> </div>  
   </div>
-      <div style="width:30%; padding-top:5%">
+      <div style=" padding-top:5%">
       <div>
         <h2> WER Over the Last Week </h2>
         <canvas id="canvas" height="450" width="600"></canvas>
@@ -58,7 +58,10 @@
     </div>
     </div>
 
-    <div class="col-md-3">
+    <div class="col-md-4 col-md-offset-1">
+    <div class="row">
+    <h2> Top 5 WER in Last Week </h2>
+    </div>
     <table class="table table-striped">
       <tr>
     <th>Date</th>
@@ -70,6 +73,31 @@
     <td>6.67%</td>
     <td>12</td>
   </tr>
+  <tr>
+    <td>02/16/2016</td>
+    <td>5.67%</td>
+    <td>9</td>
+  </tr>
+
+  <tr>
+    <td>02/03/2016</td>
+    <td>5.43%</td>
+    <td>12</td>
+  </tr>
+
+    <tr>
+    <td>01/19/2016</td>
+    <td>4.98%</td>
+    <td>3</td>
+  </tr>
+
+  <tr>
+    <td>02/18/2016</td>
+    <td>4.84%</td>
+    <td>16</td>
+  </tr>
+
+
 </table>
     </div>
     </div>
@@ -90,16 +118,6 @@
           pointStrokeColor : "#fff",
           pointHighlightFill : "#fff",
           pointHighlightStroke : "rgba(220,220,220,1)",
-          data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
-        },
-        {
-          label: "My Second dataset",
-          fillColor : "rgba(151,187,205,0.2)",
-          strokeColor : "rgba(151,187,205,1)",
-          pointColor : "rgba(151,187,205,1)",
-          pointStrokeColor : "#fff",
-          pointHighlightFill : "#fff",
-          pointHighlightStroke : "rgba(151,187,205,1)",
           data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
         }
       ]
